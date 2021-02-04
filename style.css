@@ -208,7 +208,7 @@
 
 /* esercizio 13 */
 .ex-13-button:hover .ex-13-top-white {
-  animation: movetop2 2s linear;
+  animation: movetop2 3s linear;
 }
 
 @keyframes movetop2 {
@@ -217,19 +217,24 @@
     left: 10%;
   }
 
-  25% {
+  20% {
     top: -10px;
-    left: calc(100% - 60px);
+    left: calc(100% - 30px);
+  }
+
+  30% {
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
   }
 
   50% {
-    top: calc(100% - 60px);
-    left: calc(100% - 60px);
+    top: calc(100% - 10px);
+    left: -30px;
   }
 
-  75% {
-    top: calc(100% - 60px)
-    left: calc(0 + 60px)
+  80% {
+    top: -10px;
+    left: -30px;
   }
 
   100% {
@@ -237,3 +242,38 @@
     left: 10%;
   }
 }
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: movebutton2 3s linear;
+}
+
+@keyframes movebutton2 {
+  0% {
+    right: 20%;
+    bottom: -10px;
+  }
+
+  20% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+
+  30% {
+    right: calc(100% - 30px);
+    bottom: calc(100% - 10px);
+  }
+
+  50% {
+    right: -30px;
+    bottom: calc(100% - 10px);
+  }
+
+  80% {
+    right: -30px;
+    bottom: -10px;
+  }
+
+  100% {
+    right: 20%;
+    bottom: -10px;
+  }
